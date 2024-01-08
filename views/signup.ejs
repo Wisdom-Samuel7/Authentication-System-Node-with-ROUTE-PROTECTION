@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+form{
+ height: fit-content;
+ padding: 3em;
+ border-bottom: 1em;
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1em;
+
+}
+form > input{
+padding: 1em;
+border-radius: .7em;
+width: 100%;
+border: 1px solid #345;
+
+}
+input[type="submit"] {
+  background-color: dodgerblue;
+  font-weight: bolder;
+ color: snow;
+
+}
+    
+</style>
+<body>
+
+    <form action="http://localhost:4000/signup" method="POST">
+        <h1>SIGN UP</h1>
+       
+       <input type="email" name="email" placeholder="Email">
+       <input type="password" name="password" placeholder="password">
+       
+       <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

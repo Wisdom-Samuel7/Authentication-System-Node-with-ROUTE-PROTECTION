@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav{
+width: 100vw;
+height: 15vh;
+background: teal;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+nav > ul{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+gap: 1em;
+}
+ ul li a{
+    color: #fff;
+}
+</style>
+<body>
+    <nav>
+       <h1>Auth</h1>
+       <ul>
+         <li><a href="/home">Home</a></li>
+         <li><a href="/signup">Signup</a></li>
+         <li><a href="/explore">Explore</a></li>
+       </ul>
+    </nav>
+</body>
+</html>
